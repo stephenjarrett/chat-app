@@ -2,6 +2,10 @@
 //  -Create express app
 const express = require('express');
 const app = express();
+
+//Find front end files here
+app.use(express.static('./public'));
+
 //  -Create plain HTTP server
 const http = require('http');
 const server = http.createServer(app);
